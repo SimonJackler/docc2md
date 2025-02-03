@@ -1,0 +1,25 @@
+{
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "args": [
+                "-g",
+                "./.build/plugins/Swift-DocC/outputs/docc2md.doccarchive"
+            ],
+            "cwd": "${workspaceFolder:Docc2Md}",
+            "name": "Debug docc2md",
+            "program": "${workspaceFolder:Docc2Md}/.build/debug/docc2md",
+            "preLaunchTask": "swift: Build Debug docc2md"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:Docc2Md}",
+            "name": "Release docc2md",
+            "program": "${workspaceFolder:Docc2Md}/.build/release/docc2md",
+            "preLaunchTask": "swift: Build Release docc2md"
+        }
+    ]
+}
